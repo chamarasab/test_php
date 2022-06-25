@@ -1,0 +1,223 @@
+                <div class="card-body">
+                    <?php $i = 0;
+                     do {
+
+                        ?>
+
+                        <div class="card m-1 p-1 bg-warning">
+                            <p>Loop <?php echo $i; ?> </p>
+                        </div>
+                    <?php $i++; } while ($i < $counter); ?>
+                </div>
+
+
+                <div class="card-body">
+                    <?php for ($i = 1; $i < $counter; $i+=2) { ?>
+                        <div class="card m-1 p-1 bg-warning">
+                            <p>Loop <?php echo $i; ?> </p>
+                        </div>
+                    <?php } ?>
+                </div>
+
+                <div class="card-body">
+                    <?php $i = 0; while ($i < $counter) { ?>
+                        <div class="card m-1 p-1 bg-warning">
+                            <p>Loop <?php echo $i; ?> </p>
+                        </div>
+                    <?php $i++; } ?>
+                </div>
+
+
+
+
+    <div class="row">
+        <div class="col-md-6">
+            <div class="card">
+               <div class="card-header">
+
+               </div>
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="card">
+                <div class="card-header">
+
+                </div>
+                <div class="card-body">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!--
+            <div class="row m-5">
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            Addition
+                        </div>
+                        <div class="card-body">
+                            <form method="post">
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Enter First Number</label>
+                                    <input type="number" class="form-control" id="exampleInputNumber1"
+                                           aria-describedby="numberHelp" name="txtFirstNumber">
+                                </div>
+                                <div class="mb-3">
+                                    <label for="exampleInputEmail1" class="form-label">Enter Second Number</label>
+                                    <input type="number" class="form-control" id="exampleInputNumber2"
+                                           aria-describedby="numberHelp" name="txtSecondNumber">
+                                </div>
+                                <div class="d-grid">
+                                    <input class="btn btn-primary text-white" type="submit" name="Submit" value="Find Total"/>
+                                </div>
+                            </form>
+
+                            <div class="my-3">
+                                <input type="number" class="form-control" id="exampleInputNumber2" aria-describedby="numberHelp"
+                                       placeholder="Output" disabled name="txtOutput" value="<?php echo $sum; ?>">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="card">
+                        <div class="card-header">
+                            If -Else
+                        </div>
+                        <div class="card-body">
+                            <form method="post">
+                                <div class="mb-3">
+                                    <label for="exampleInputName" class="form-label">Enter Name</label>
+                                    <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp"
+                                           name="txtName">
+                                </div>
+                                <div class="d-grid">
+                                    <input class="btn btn-primary text-white" type="submit" name="Submit2" value="Find John"/>
+                                </div>
+                            </form>
+
+                            <div class="my-3">
+                                <input type="text" class="form-control" id="exampleOutputResult" aria-describedby="nameHelp"
+                                       placeholder="Result" disabled name="txtResult" value="<?php echo $result; ?>">
+                            </div>
+
+                            <hr>
+                            <p class="text-center text-danger"><?php echo $dateStatement; ?> !</p>
+
+                            <hr>
+                            <h5 class="text-center">Switch Case</h5>
+                            <form method="post">
+                                <div class="mb-3">
+                                    <label for="exampleInputNum" class="form-label">Enter Number</label>
+                                    <input type="number" class="form-control" id="exampleInputNum" aria-describedby="numberHelp"
+                                           name="txtInputNumber">
+                                </div>
+                                <div class="d-grid">
+                                    <input class="btn btn-primary text-white" type="submit" name="Submit3" value="Find Number"/>
+                                </div>
+                            </form>
+                            <p class="text-center text-danger mt-3"><?php echo $resultCase; ?> </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            -->
+
+
+             <div class="row m-5">
+                        <div class="col-md-3">
+                            <div class="card m-1">
+                                <div class="card-header">
+                                    Loops Counter Input
+                                </div>
+                                <div class="card-body">
+                                    <form method="post">
+                                        <div class="mb-3">
+                                            <label for="exampleInputName" class="form-label">Enter Counter</label>
+                                            <input type="text" class="form-control" id="exampleInputName" aria-describedby="nameHelp"
+                                                   name="txtCounter">
+                                        </div>
+                                        <div class="d-grid">
+                                            <input class="btn btn-primary text-white" type="submit" name="Submit4" value="Submit"/>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card m-1">
+                                <div class="card-header">
+                                    Do-While Loop Output
+                                </div>
+
+                                <div class="card-body">
+                                    <?php $i = 0;
+                                    do {
+                                        ?>
+
+                                        <div class="card m-1 p-1 bg-warning">
+                                            <p>Hello PHP <?php echo $i; ?> </p>
+                                        </div>
+                                        <?php $i++;
+                                    } while ($i < $counter); ?>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card m-1">
+                                <div class="card-header">
+                                    While Loop Output
+                                </div>
+
+                                <div class="card-body">
+                                    <?php $i = 0;
+                                    while ($i < $counter) { ?>
+                                        <div class="card m-1 p-1 bg-warning">
+                                            <p>Loop <?php echo $i; ?> </p>
+                                        </div>
+                                        <?php $i++;
+                                    } ?>
+                                </div>
+
+                            </div>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="card m-1">
+                                <div class="card-header">
+                                    For Loop Output
+                                </div>
+
+                                <div class="card-body">
+                                    <?php for ($i = 0; $i < $counter; $i++) { ?>
+                                        <div class="card m-1 p-1 bg-warning">
+                                            <p>Loop <?php echo $i; ?> </p>
+                                        </div>
+                                    <?php } ?>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+
+
+
+
+                    <div class="row">
+                            <div class="col-md-6">
+                                <div class="card">
+                                    <div class="card-header">
+                                        Calling function by passing value
+                                    </div>
+                                    <div class="card-body">
+                                        <?php echo showMyName("Chamara"); ?>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
