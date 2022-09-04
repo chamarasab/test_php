@@ -1,14 +1,7 @@
+<?php include 'connection.php'?>
+
 <?php
 $connection = mysqli_connect('localhost', 'root', '', 'bank');
-
-if (mysqli_connect_errno()) {
-    die('Database Connection Failed' . mysqli_connect_errno());
-} else {
-    //echo "Connection Success!";
-}
-?>
-
-<?php
 
 $post_data = array();
 $post_data['id'] = $_POST['txtId'];;
@@ -22,7 +15,7 @@ $result = mysqli_query($connection, $sql);
 
 if ($result) {
     echo "<div class='alert alert-success'>Customer registered successfully</div>";
-    header("location: /test/add_customer.php");
+    header("location: /test/customer.php");
 } else {
     echo "<div class='alert alert-danger'>Oops... Something went wrong!</div>";
 }
